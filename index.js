@@ -8,6 +8,7 @@ client.once('ready', () => {
 });
 
 client.on('interactionCreate', async interaction => {
+	console.log(interaction);
 	if (!interaction.isChatInputCommand()) return;
 
 	const { commandName } = interaction;
