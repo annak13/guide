@@ -5,6 +5,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.once('ready', () => {
 	console.log('Ready!');
+	console.log(`Ready. logged in as ${client.user.tag}. I am on ${client.guilds.cache.size} guild(s)`)
 });
 
 client.on('interactionCreate', async interaction => {
